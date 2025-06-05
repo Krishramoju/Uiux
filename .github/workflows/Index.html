@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroOS Interface</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="os-container">
+    <!-- Intent Timeline -->
+    <aside class="intent-timeline">
+      <h2>Intent Timeline</h2>
+      <ul id="timeline-list">
+        <li>User opened Memory Lane</li>
+        <li>Cortex suggested journaling</li>
+        <li>User queried photos</li>
+      </ul>
+    </aside>
+
+    <!-- Main Memory Lane Content -->
+    <main class="memory-lane">
+      <h1>Memory Lane</h1>
+      <div class="grid">
+        <div class="memory-card">🧠 Memory Snapshot 1</div>
+        <div class="memory-card">📷 Photo Archive</div>
+        <div class="memory-card">📅 Timeline Graph</div>
+        <div class="memory-card">📝 Journal Entry</div>
+      </div>
+    </main>
+
+    <!-- Cortex Bubble -->
+    <div class="cortex-bubble">
+      <div class="chatbox" id="chatbox">
+        <p><strong>Cortex:</strong> How can I assist you today?</p>
+      </div>
+      <input type="text" id="userInput" placeholder="Speak your intent..." />
+    </div>
+
+    <!-- Toggle Theme -->
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
